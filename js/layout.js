@@ -12,7 +12,7 @@ function changeActiveLink() {
     $('#sidebar a[href*="' + page + '"]').addClass('active');
 }
 $(function () {
-    $("#navbar").load('/layout/navbar.html')
-    $("#sidebar").load('/layout/sidebar.html', changeActiveLink)
-    $("#modal-delete").load('/layout/modal-delete.html')
+    $("#navbar").load('layout/navbar.html')
+    $("#sidebar").load('layout/sidebar.html', changeActiveLink)
+    $("#modal-delete").load('layout/modal-delete.html')
 })
