@@ -29,7 +29,7 @@ $(document).ready(function() {
         }).done(function(result) {
             if(result != null) {
                 setCookie(result.id, result.fullName, result.email, result.roleName)
-                window.location.href = "/index.html"
+                window.location.href = "index.html"
             } else {
                 $('.alert').css('display', 'block')
             }
@@ -39,6 +39,6 @@ $(document).ready(function() {
 
     $("#logout").on('click', function() {
         clearCookie()
-        window.location.href = "/login.html"
+        window.location.href = "login.html"
     })
 })
